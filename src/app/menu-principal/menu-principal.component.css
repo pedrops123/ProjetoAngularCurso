@@ -1,0 +1,11 @@
+.mat-drawer-container {
+    position: fixed;
+    top:0;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  
+  .mat-drawer {
+    width: 20%;
+  }
