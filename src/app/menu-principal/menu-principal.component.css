@@ -4,8 +4,17 @@
     width: 100%;
     bottom: 0;
   }
+
+  ul {
+    list-style: outside none none;
+  }
+
   
-  
+  a {
+    color: white;
+    text-decoration: none; /* no underline */
+  }
   .mat-drawer {
     width: 20%;
+    max-zoom: 0 ;
   }

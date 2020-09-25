@@ -1,15 +1,24 @@
 
-import { NgModule  } from '@angular/core';
+import {  NgModule, NO_ERRORS_SCHEMA  } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
+import { MenuPrincipalService } from './menu-principal.service';
+import { SectionNomeComponent } from '../section-nome/section-nome.component';
+import { SectionNomeModule } from '../section-nome/section-nome.module';
+
+
 
 @NgModule({
   declarations: [
-    HeaderComponent
-
+    
+ 
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SectionNomeModule
+  
+  ],
+  providers:[
+    MenuPrincipalService
   ]
 })
 

@@ -1,22 +1,26 @@
 
 <mat-drawer-container>
     <mat-drawer mode="side" opened> 
-    
-    <mat-card>
-        <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title > {{ NomeUsuario }} </mat-card-title>
-                <mat-card-subtitle> {{ Cargo }} </mat-card-subtitle>
-        </mat-card-header>
-    </mat-card>
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title > {{ infoUser.NomeUsuario }} </mat-card-title>
+                    <mat-card-subtitle> {{ infoUser.Cargo }} </mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
     
     <mat-divider></mat-divider>
-
-
+    <ul>
+        <li *ngFor="let item of this.infoUser.ListaItensMenu">
+            <a id="buttonLink" href="#"> {{ item }} </a> 
+             <br/><br/>
+        </li>
+     
+    </ul>    
     </mat-drawer>   
 
     <mat-drawer-content>
-        Main content
+            <tagTeste></tagTeste>
     </mat-drawer-content>
 
 </mat-drawer-container>

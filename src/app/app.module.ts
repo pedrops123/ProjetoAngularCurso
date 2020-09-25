@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 /* Modulos Material Design  */
 
@@ -14,6 +16,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule }   from '@angular/forms';
 import { MenuPrincipalModule } from './menu-principal/menu-principal.module';
+import { SectionNomeModule } from './section-nome/section-nome.module';
+import { SectionNomeComponent } from './section-nome/section-nome.component';
 
 
 
@@ -23,6 +27,7 @@ import { MenuPrincipalModule } from './menu-principal/menu-principal.module';
   [
     AppComponent,
     MenuPrincipalComponent,
+    SectionNomeComponent
   ],
   imports: 
   [
@@ -35,7 +40,9 @@ import { MenuPrincipalModule } from './menu-principal/menu-principal.module';
     MatDividerModule,
     MatCardModule,
     FormsModule,
-    MenuPrincipalModule
+    MenuPrincipalModule,
+    SectionNomeModule
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]
