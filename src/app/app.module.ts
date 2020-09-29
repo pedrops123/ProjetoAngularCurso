@@ -1,5 +1,6 @@
+import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,16 +19,20 @@ import { FormsModule }   from '@angular/forms';
 import { MenuPrincipalModule } from './menu-principal/menu-principal.module';
 import { SectionNomeModule } from './section-nome/section-nome.module';
 import { SectionNomeComponent } from './section-nome/section-nome.component';
-
-
-
+import { DataBidingComponent } from './data-biding/data-biding.component';
+import { InterpolacoesComponent } from './interpolacoes/interpolacoes.component';
+import { BidingInterpolacaoComponent } from './biding-interpolacao/biding-interpolacao.component';
+import { ClassBidingComponent } from './class-biding/class-biding.component';
+import { EventBidingComponent } from './event-biding/event-biding.component';
+import { InputPropertiesComponent } from './input-properties/input-properties.component';
+import { DumbComponentComponent } from './input-properties/dumb-component/dumb-component.component';
 
 @NgModule({
   declarations: 
   [
-    AppComponent,
-    MenuPrincipalComponent,
-    SectionNomeComponent
+    AppComponent
+   
+   
   ],
   imports: 
   [
@@ -41,10 +46,10 @@ import { SectionNomeComponent } from './section-nome/section-nome.component';
     MatCardModule,
     FormsModule,
     MenuPrincipalModule,
-    SectionNomeModule
- 
+    MatInputModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+ 
 })
 export class AppModule { }

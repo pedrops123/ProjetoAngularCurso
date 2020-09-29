@@ -8,16 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionNomeComponent  {
 
-  descricaoTeste:String;
-  urlImg:String;
-  constructor() {
 
-      this.descricaoTeste = "Um comentario qualquer";
-      this.urlImg = "http://lorempixel.com/400/200/sports/2/";
+  constructor() {
+  
 
    }
 
   ngOnInit(): void {
   }
+
+
+
 
 }

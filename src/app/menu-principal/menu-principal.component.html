@@ -1,10 +1,10 @@
 
-<mat-drawer-container>
-    <mat-drawer mode="side" opened> 
+<mat-drawer-container autosize>
+    <mat-drawer id="menuLateral" mode="side" opened> 
         <mat-card>
             <mat-card-header>
                 <div mat-card-avatar class="example-header-image"></div>
-                <mat-card-title > {{ infoUser.NomeUsuario }} </mat-card-title>
+                <mat-card-title> {{ infoUser.NomeUsuario }} </mat-card-title>
                     <mat-card-subtitle> {{ infoUser.Cargo }} </mat-card-subtitle>
             </mat-card-header>
         </mat-card>
@@ -12,7 +12,7 @@
     <mat-divider></mat-divider>
     <ul>
         <li *ngFor="let item of this.infoUser.ListaItensMenu">
-            <a id="buttonLink" href="#"> {{ item }} </a> 
+            <a id="buttonLink" (click)="scrollToElement(item.href)" [href]="item.href"> {{ item.Description }} </a> 
              <br/><br/>
         </li>
      
@@ -20,6 +20,12 @@
     </mat-drawer>   
 
     <mat-drawer-content>
+            <interpolacao></interpolacao>
+            <BInterpolacao></BInterpolacao>
+            <ClassBiding></ClassBiding>
+            <event-biding></event-biding>
+            <dt-biding></dt-biding>
+            <input-properties></input-properties>
             <tagTeste></tagTeste>
     </mat-drawer-content>
 
