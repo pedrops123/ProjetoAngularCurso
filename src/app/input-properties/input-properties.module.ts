@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputPropertiesComponent } from './input-properties.component';
 import { MatDividerModule } from '@angular/material/divider';
-
+import {MatGridListModule} from '@angular/material/grid-list';
+import { InputPropertiesService } from './input-properties.service';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,12 @@ import { MatDividerModule } from '@angular/material/divider';
   ],
   imports: [
     CommonModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule
     
+  ],
+  providers:[
+    InputPropertiesService
   ]
 })
 export class InputPropertiesModule { }

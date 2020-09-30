@@ -26,12 +26,13 @@ import { ClassBidingComponent } from './class-biding/class-biding.component';
 import { EventBidingComponent } from './event-biding/event-biding.component';
 import { InputPropertiesComponent } from './input-properties/input-properties.component';
 import { DumbComponentComponent } from './input-properties/dumb-component/dumb-component.component';
+import { EventOutputPropertiesComponent } from './event-output-properties/event-output-properties.component';
+import { InicialAngularComponent } from './Anotacoes/inicial-angular/inicial-angular.component';
 
 @NgModule({
   declarations: 
   [
     AppComponent
-   
    
   ],
   imports: 

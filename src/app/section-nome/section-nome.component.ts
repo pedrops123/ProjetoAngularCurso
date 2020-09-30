@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuPrincipalService } from '../menu-principal/menu-principal.service';
 
 @Component({
   selector: 'tagTeste',
@@ -8,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionNomeComponent  {
 
+nomePrincipal:String;
 
-  constructor() {
-  
-
+  constructor(dadosTela:MenuPrincipalService) {
+      var dados  = dadosTela.getInformacaoUser();
+      this.nomePrincipal = dados.NomeUsuario;
    }
 
   ngOnInit(): void {

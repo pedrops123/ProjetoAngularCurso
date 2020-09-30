@@ -12,9 +12,11 @@ import { MatDividerModule } from '@angular/material/divider';
 import { InterpolacoesModule } from '../interpolacoes/interpolacoes.module';
 import { BidingInterpolacaoModule } from '../biding-interpolacao/biding-interpolacao.module';
 import { ClassBidingModule } from '../class-biding/class-biding.module';
-import { DataBidingComponent } from '../data-biding/data-biding.component';
 import { DataBidingModule } from '../data-biding/data-biding.module';
 import { InputPropertiesModule } from '../input-properties/input-properties.module';
+import { EventOutputPropertiesModule } from '../event-output-properties/event-output-properties.module';
+import { InicialAngularModule } from '../Anotacoes/inicial-angular/inicial-angular.module';
+import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
   declarations: [
@@ -34,9 +36,10 @@ import { InputPropertiesModule } from '../input-properties/input-properties.modu
     ClassBidingModule,
     EventBidingModule,
     DataBidingModule,
-    InputPropertiesModule
-
-
+    InputPropertiesModule,
+    EventOutputPropertiesModule,
+    InicialAngularModule,
+    MatTreeModule
   ],
   providers:[
     MenuPrincipalService

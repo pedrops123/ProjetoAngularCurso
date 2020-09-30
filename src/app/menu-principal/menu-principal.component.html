@@ -10,23 +10,36 @@
         </mat-card>
     
     <mat-divider></mat-divider>
+  <!--
+    <mat-tree [dataSource]="dataSource" [treeControl]="controleMenuExpansivo">
+
+    </mat-tree>
+ -->
     <ul>
-        <li *ngFor="let item of this.infoUser.ListaItensMenu">
-            <a id="buttonLink" (click)="scrollToElement(item.href)" [href]="item.href"> {{ item.Description }} </a> 
-             <br/><br/>
-        </li>
-     
+        <div *ngFor="let item of this.infoUser.dadosArvore">
+            <mat-card>
+                <mat-card-title> {{ item.node }} </mat-card-title>
+            </mat-card>
+            <li *ngFor="let node of item.childs">
+                <a style="cursor: pointer;" id="buttonLink" (click)="scrollToElement(node.href)"> {{ node.Description }} </a>  
+                 <br/><br/>
+            </li>
+        </div>
     </ul>    
+
     </mat-drawer>   
 
     <mat-drawer-content>
+            <Inicial-angular></Inicial-angular>
+            <tagTeste></tagTeste>
             <interpolacao></interpolacao>
             <BInterpolacao></BInterpolacao>
             <ClassBiding></ClassBiding>
             <event-biding></event-biding>
             <dt-biding></dt-biding>
             <input-properties></input-properties>
-            <tagTeste></tagTeste>
+            <output-properties></output-properties>
+         
     </mat-drawer-content>
 
 </mat-drawer-container>

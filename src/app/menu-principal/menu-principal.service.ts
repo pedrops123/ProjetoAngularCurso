@@ -18,29 +18,50 @@ export class MenuPrincipalService  {
       NomeUsuario : "Pedro Furlan",
       Cargo : "Desenvolvedor",
       UrlFoto : "",
-      ListaItensMenu:[
+      dadosArvore:[
         {
-          Description:'Interpolações',
-          href:'#int'
+          node:"Anotações",
+          childs:[
+            {
+              Description:"Iniciando no angular",
+              href:"#inicial"
+            }
+          ]
         },
         {
-          Description:'Biding e Interpolações',
-          href:'#BI'
-        },
-        {
-          Description:'Biding de classes',
-          href:'#BC'
-        },
-        {
-          Description:'Event Biding',
-          href:'#EB'
-        },
-        {
-          Description:'Two Way Data Biding',
-          href:'#TWDB'
+          node:"Exemplos",
+          childs:[
+            {
+              Description:'Interpolações',
+              href:'#int'
+            },
+            {
+              Description:'Biding e Interpolações',
+              href:'#BI'
+            },
+            {
+              Description:'Biding de classes',
+              href:'#BC'
+            },
+            {
+              Description:'Event Biding',
+              href:'#EB'
+            },
+            {
+              Description:'Two Way Data Biding',
+              href:'#TWDB'
+            },
+            {
+              Description:'Input Properties',
+              href:'#IP'
+            }
+          ]
         }
       ]
     }
+
+
+
     return this.data;
   }
 

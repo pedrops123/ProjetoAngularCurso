@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class DataBidingComponent implements OnInit {
 
   textoDataBiding:String="Algum texto Qualquer";
+  urlImagem:String = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScTXqwACHGmslYduvld1ylL3Pe8SUd2nd1Mw&usqp=CAU";
 
   dados:ModeloDataBiding;
 

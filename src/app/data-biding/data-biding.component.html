@@ -1,6 +1,6 @@
-
+<br/>
+<br/>
 <h2 id="#TWDB">Two way data biding </h2>
-
 <section>
     <article>
         <div>
@@ -25,8 +25,23 @@
               <h1>Meu nome é {{ dados.nome }} e meu sobrenome é {{ dados.sobrenome }}</h1>
 
         </div>
+        <div>
+            Data Biding com imagem <br/>
+
+            <mat-form-field class="example-full-width">
+              <mat-label> Url da imagem </mat-label>
+              <input matInput placeholder="Sobrenome" [(ngModel)]="urlImagem">
+            </mat-form-field>
+            <br/>
+            <br/>
+
+
+              <img [src]="urlImagem" alt="Uma imagem escolhida por voce"/>
+
+        </div>
 
     </article>
 </section> 
-
+<br/>
+<br/>
 <mat-divider></mat-divider>
