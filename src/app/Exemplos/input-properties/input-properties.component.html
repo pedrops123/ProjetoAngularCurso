@@ -1,0 +1,29 @@
+
+<mat-expansion-panel>
+    
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+           Exemplo Input Properties
+        </mat-panel-title>
+     <mat-panel-description>
+     </mat-panel-description>
+    </mat-expansion-panel-header>
+
+
+    <br/>
+    <br/>
+    <h1> Input Properties </h1>
+    
+    <mat-grid-list cols = "10">
+        <mat-grid-tile *ngFor="let component of dadosProperties" colspan="3" rowspan="1">
+            <dumb-component [Title]="component.title" [Description]="component.description" [Color]="component.color" ></dumb-component>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <br/>
+    <br/>
+</mat-expansion-panel>
+
+<mat-divider></mat-divider>
+
+
+

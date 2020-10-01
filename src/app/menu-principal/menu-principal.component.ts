@@ -23,13 +23,6 @@ interface ExampleFlatNode {
 export class MenuPrincipalComponent {
 
 
-  private _transformer = (node: TileMenu, level: number) => {
-    return {
-      expandable: !!node.childs && node.childs.length > 0,
-      name: node.node ,
-      level: level,
-    };
-  }
 
   infoUser:DadosMenu;
   

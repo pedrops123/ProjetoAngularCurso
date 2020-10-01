@@ -1,6 +1,4 @@
-import { LinkMenu } from './../models/LinkMenu';
 import { DadosMenu } from './../models/DadosMenu';
-import { DadosUser } from './../models/DadosUser';
 import { Injectable } from '@angular/core';
 
 @Injectable()
@@ -20,16 +18,32 @@ export class MenuPrincipalService  {
       UrlFoto : "",
       dadosArvore:[
         {
-          node:"Anotações",
+          node:"Começando com Angular",
           childs:[
             {
-              Description:"Iniciando no angular",
-              href:"#inicial"
+              Description:'Iniciando com Angular',
+              href:'#inicial'
+            },
+            {
+              Description:'Informações Úteis',
+              href:''
+            },
+            {
+              Description:'Criando modulos no Angular',
+              href:''
+            },
+            {
+              Description:'Services',
+              href:''
+            },
+            {
+              Description:'Templates angular',
+              href:''
             }
           ]
         },
         {
-          node:"Exemplos",
+          node:"Explicações / Exemplos",
           childs:[
             {
               Description:'Interpolações',

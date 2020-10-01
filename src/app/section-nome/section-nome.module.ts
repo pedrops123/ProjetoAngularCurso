@@ -4,7 +4,7 @@ import { SectionNomeComponent } from './section-nome.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
-import { DataBidingComponent } from '../data-biding/data-biding.component';
+import { DataBidingComponent } from '../Exemplos/data-biding/data-biding.component';
 import { MatButtonModule } from '@angular/material/button';
 
 

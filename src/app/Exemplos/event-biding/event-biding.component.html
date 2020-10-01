@@ -1,0 +1,33 @@
+
+<mat-expansion-panel>
+    
+  <mat-expansion-panel-header>
+      <mat-panel-title>
+         Exemplo Event Biding
+      </mat-panel-title>
+   <mat-panel-description>
+   </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <h2 > Event Biding  </h2>
+     
+     <button mat-button color="warn" (click)="msgBotao()">Me clique</button>
+     <br/>
+     <br/>
+
+     <h1 [style.color]="this.validaText == true ? 'blue' : 'red' " >{{ this.validaText == true ? "Validado !" : "Campo precisa ser maior ou igual a " + this.tamanhoMaximo   }}</h1>
+
+     <mat-form-field class="example-full-width">
+      <mat-label>Texto Digitado </mat-label>
+      <input matInput placeholder="Algum texto" (keyup)="validaMsg($event)">
+    </mat-form-field>
+    
+     <br/>
+     <br/>
+
+</mat-expansion-panel>
+
+<mat-divider></mat-divider>
+
+   
+     

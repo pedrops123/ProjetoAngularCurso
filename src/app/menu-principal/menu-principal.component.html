@@ -15,28 +15,37 @@
 
     </mat-tree>
  -->
-    <ul>
-        <div *ngFor="let item of this.infoUser.dadosArvore">
-            <mat-card>
-                <mat-card-title> {{ item.node }} </mat-card-title>
-            </mat-card>
-            <li *ngFor="let node of item.childs">
-                <a style="cursor: pointer;" id="buttonLink" (click)="scrollToElement(node.href)"> {{ node.Description }} </a>  
-                 <br/><br/>
-            </li>
-        </div>
-    </ul>    
+    <div  *ngFor="let item of this.infoUser.dadosArvore">
+        <h1>{{ item.node }}</h1> &nbsp; &nbsp;
+        <mat-divider></mat-divider>
+            <br/>
+            <ul *ngFor="let node of item.childs">
+                <li>
+                    <a style="cursor: pointer;" id="buttonLink" (click)="scrollToElement(node.href)"> {{ node.Description }} </a>  
+                     <br/><br/>
+                </li>
+            </ul>
+    </div>    
 
     </mat-drawer>   
 
     <mat-drawer-content>
-            <Inicial-angular></Inicial-angular>
             <tagTeste></tagTeste>
+            <Inicial-angular></Inicial-angular>
+            <AnotacoesInfo></AnotacoesInfo>
+            <AnotacoesModulos></AnotacoesModulos>
+            <AnotacoesServices></AnotacoesServices>
+            <AnotacoesTemplate></AnotacoesTemplate>
             <interpolacao></interpolacao>
+            <Anotacoes-biding-interpolacao></Anotacoes-biding-interpolacao>
             <BInterpolacao></BInterpolacao>
+            <AnotationClassBiding></AnotationClassBiding>
             <ClassBiding></ClassBiding>
+            <Annotation-event-biding></Annotation-event-biding>
             <event-biding></event-biding>
+            <AnnotationDtBiding></AnnotationDtBiding>
             <dt-biding></dt-biding>
+            <input-properties-annotation></input-properties-annotation>
             <input-properties></input-properties>
             <output-properties></output-properties>
          

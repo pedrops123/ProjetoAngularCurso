@@ -52,7 +52,7 @@ selector -> o seletor que sera utilizado para chamar o componente em outra tela
 templateUrl -> o template correspondente ao componente 
 StyleUrls -> o CSS correspondente ao componente
 
-pode-se utilizar o template literal com o atributos template
+pode-se utilizar o template literal com os atributos template
 
 
 --------
@@ -116,7 +116,7 @@ ou
 
 --------
 
-* Event Binding ( Handler) 
+* Event Binding (Handler) 
 
 Para eventos no angular utilizamos ().
 Dentro das aspas do Evento podemos chamar um metodo no nosso component.ts , por exemplo :
@@ -141,7 +141,9 @@ a sintaxe para utilização é [(ngModel)]="nome_da_propriedade"
 
 * Input properties
 
-Para deixar um componente aceitar uma propriedade , deverá colocar na propriedade o "@Input" sintaxe:
+Para deixar um componente aceitar uma propriedade , deverá colocar na propriedade o "@Input" dentro do component.ts
+
+sintaxe:
 
 @Input() nome_da_variavel:String; ou @Input('outro_nome') nome_da_variavel:String; 
 

@@ -1,0 +1,47 @@
+<mat-expansion-panel>
+    
+  <mat-expansion-panel-header>
+      <mat-panel-title>
+         Exemplo Class Biding
+      </mat-panel-title>
+   <mat-panel-description>
+   </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <br/>
+  <br/>
+  <h2> BIDING DE CLASSES </h2>
+  
+    <br/>
+    <br/>
+    Biding de classes<br/><br/>
+  
+    <mat-form-field appearance="fill" >
+      <mat-label>Classes</mat-label>
+      <mat-select matSelect #ButtonColor (change)="0">
+        <mat-option value='primary'>Primary</mat-option>
+        <mat-option value='accent'>Accent</mat-option>
+        <mat-option value='warn'>Warn</mat-option> 
+      </mat-select>
+    </mat-form-field>
+  
+  
+  
+      <br/><br/>
+  
+      Via Binding da propriedade <br/><br/>
+      <button mat-button  [style.display]="ButtonColor.value != 'warn' ? 'block':'none' " [color]="ButtonColor.value">Teste Classe</button>
+  
+       ou 
+       <br/>
+       Via interpolação <br/><br/>
+       <button mat-button color="{{ ButtonColor.value }}">Teste Classe</button>
+       <br/>
+       <br/>
+
+
+</mat-expansion-panel>
+
+<mat-divider></mat-divider>
+
+    
