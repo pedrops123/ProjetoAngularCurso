@@ -38,7 +38,6 @@ export class InputPropertiesService {
           color:'#079A9B',
           description:'Quinta Div'
         },
-        ,
         {
           title:'Div 6',
           color:'#079A9B',

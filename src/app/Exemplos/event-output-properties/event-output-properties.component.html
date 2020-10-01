@@ -1,8 +1,27 @@
-<h1 id="#IP"> Output Properties </h1>
 
-<button mat-raised-button color="warn" (click)="diminui()">-</button> &nbsp;&nbsp;
-<mat-form-field>
-    <input style="color:white;"matInput [(ngModel)]="valorContador" disabled>
-</mat-form-field>
-&nbsp;&nbsp;
-<button mat-raised-button color="primary" (click)="acrescenta()">+</button>
+<mat-expansion-panel>
+    
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+           Exemplo Output Properties
+        </mat-panel-title>
+     <mat-panel-description>
+     </mat-panel-description>
+    </mat-expansion-panel-header>
+
+<br/><br/>
+    <h1> Output Properties </h1>
+
+    <h2>Atenção abra seu console para poder visualizar o log </h2>
+    <button mat-raised-button color="warn" (click)="diminui()">-</button> &nbsp;&nbsp;
+    <mat-form-field>
+        <input style="color:white;"matInput [(ngModel)]="valorContador" disabled>
+    </mat-form-field>
+    &nbsp;&nbsp;
+    <button mat-raised-button color="primary" (click)="acrescenta()">+</button>
+    <br/><br/>
+</mat-expansion-panel>
+
+<mat-divider></mat-divider>
+
+

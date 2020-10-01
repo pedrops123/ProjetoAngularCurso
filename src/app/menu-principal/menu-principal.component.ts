@@ -55,6 +55,11 @@ export class MenuPrincipalComponent {
    
   }
 
+  mostraEstadoFilho($event){
+    console.log("Pagina Pai recebeu valor de filho event-output");
+    console.log($event);
+  }
+
 
 }
 

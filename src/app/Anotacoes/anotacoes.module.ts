@@ -12,6 +12,7 @@ import { ClassBidingComponent } from './class-biding/class-biding.component';
 import { EventBidingComponent } from './event-biding/event-biding.component';
 import { DataBidingComponent } from './data-biding/data-biding.component';
 import { InputPropertiesComponent } from './input-properties/input-properties.component';
+import { OutputPropertiesComponent } from './output-properties/output-properties.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { InputPropertiesComponent } from './input-properties/input-properties.co
     EventBidingComponent,
     DataBidingComponent,
     InputPropertiesComponent,
+    OutputPropertiesComponent,
 
   ],
   exports:[
@@ -39,7 +41,8 @@ import { InputPropertiesComponent } from './input-properties/input-properties.co
     ClassBidingComponent,
     EventBidingComponent,
     DataBidingComponent,
-    InputPropertiesComponent
+    InputPropertiesComponent,
+    OutputPropertiesComponent
   ],
   imports: [
     CommonModule,

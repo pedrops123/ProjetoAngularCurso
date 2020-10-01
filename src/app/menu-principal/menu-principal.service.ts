@@ -26,19 +26,15 @@ export class MenuPrincipalService  {
             },
             {
               Description:'Informações Úteis',
-              href:''
+              href:'#IU'
             },
             {
               Description:'Criando modulos no Angular',
-              href:''
+              href:'#modulos'
             },
             {
               Description:'Services',
-              href:''
-            },
-            {
-              Description:'Templates angular',
-              href:''
+              href:'#services'
             }
           ]
         },

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'output-properties',
@@ -9,6 +9,8 @@ export class EventOutputPropertiesComponent implements OnInit {
 
   valorContador:number;
 
+  @Output() Emmiter = new EventEmitter();
+  
   constructor() { 
     this.valorContador = 0;
   }
@@ -19,11 +21,13 @@ export class EventOutputPropertiesComponent implements OnInit {
 
   acrescenta(){
     this.valorContador++;
+    this.Emmiter.emit( { valorIncrementado:this.valorContador } );
   }
 
 
   diminui(){
     this.valorContador--;
+    this.Emmiter.emit( { valorDecrementado:this.valorContador } );
   }
 
 }

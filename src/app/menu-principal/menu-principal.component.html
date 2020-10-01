@@ -3,7 +3,7 @@
     <mat-drawer id="menuLateral" mode="side" opened> 
         <mat-card>
             <mat-card-header>
-                <div mat-card-avatar class="example-header-image"></div>
+                <div mat-card-avatar class="example-header-image"><img src=""/></div>
                 <mat-card-title> {{ infoUser.NomeUsuario }} </mat-card-title>
                     <mat-card-subtitle> {{ infoUser.Cargo }} </mat-card-subtitle>
             </mat-card-header>
@@ -47,7 +47,8 @@
             <dt-biding></dt-biding>
             <input-properties-annotation></input-properties-annotation>
             <input-properties></input-properties>
-            <output-properties></output-properties>
+            <outputAnotation></outputAnotation>
+            <output-properties (Emmiter)="mostraEstadoFilho($event)"></output-properties>
          
     </mat-drawer-content>
 
