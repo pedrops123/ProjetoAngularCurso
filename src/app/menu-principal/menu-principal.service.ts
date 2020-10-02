@@ -64,6 +64,14 @@ export class MenuPrincipalService  {
             {
               Description:'Input Properties',
               href:'#IP'
+            },
+            {
+              Description:'Output Properties',
+              href:'#OP'
+            },
+            {
+              Description:'Ciclo de Vida Componentes',
+              href:'#CV'
             }
           ]
         }

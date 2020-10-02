@@ -165,6 +165,18 @@ this.Emmiter.emit("alguma_coisa");
 para deixar o atributo Emmiter visivel , devemos incluir a tag @Output() e no componente que fomos chamar este output
 devemos incluir o event bind
 
+---------
+
+
+Life Cicle 
+
+* NgOnChanges -> Quando o component é inicializado e quando o valor property-biding é atualizado .
+* ngOnInit -> Quando o component é inicializado .
+* ngDoCheck -> A cada ciclo de verificação de mudanças .
+* ngAfterContentInit -> Depois de inserir conteúdo externo na view .
+* ngAfterContentChecked -> A cada verificação de conteudo inserido. 
+* ngAfterViewChecked -> a cada verificação de conteudo / Conteudo filho. 
+* ngOnDestroy -> antes da diretiva/Component ser destruido. 
 
 
 

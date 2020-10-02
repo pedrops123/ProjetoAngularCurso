@@ -19,6 +19,9 @@ import { EventOutputPropertiesComponent } from './event-output-properties/event-
 import { InputPropertiesComponent } from './input-properties/input-properties.component';
 import { InterpolacoesComponent } from './interpolacoes/interpolacoes.component';
 import { DumbComponentComponent } from './input-properties/dumb-component/dumb-component.component';
+import { LifeCicleComponentComponent } from './life-cicle-component/life-cicle-component.component';
+import { ComponentFileCicleComponent } from './life-cicle-component/component-file-cicle/component-file-cicle.component';
+import { ViewChildComponent } from './view-child/view-child.component';
 
 @NgModule({
   declarations:
@@ -30,7 +33,10 @@ import { DumbComponentComponent } from './input-properties/dumb-component/dumb-c
     EventOutputPropertiesComponent,
     InputPropertiesComponent,
     InterpolacoesComponent,
-    DumbComponentComponent
+    DumbComponentComponent,
+    LifeCicleComponentComponent,
+    ComponentFileCicleComponent,
+    ViewChildComponent
   ],
   exports:
   [
@@ -40,7 +46,9 @@ import { DumbComponentComponent } from './input-properties/dumb-component/dumb-c
     EventBidingComponent,
     EventOutputPropertiesComponent,
     InputPropertiesComponent,
-    InterpolacoesComponent
+    InterpolacoesComponent,
+    LifeCicleComponentComponent,
+    ViewChildComponent
   ],
   imports: [
     CommonModule,

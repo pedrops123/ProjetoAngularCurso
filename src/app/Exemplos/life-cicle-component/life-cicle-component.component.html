@@ -1,0 +1,26 @@
+
+<mat-expansion-panel>
+    
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+           Exemplo Ciclo de Vida
+        </mat-panel-title>
+     <mat-panel-description>
+     </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <br/>
+    <br/>
+    <h2> Ciclo de Vida </h2>
+    Abra o console para poder visualizar o ciclo de vida do componente abaixo: <br/><br/>
+
+    <div-life-cicle *ngIf="mostraComponent"></div-life-cicle>
+    
+<button (click)="setValueMostraComponent()" mat-button>{{ mostraComponent == true ? "Esconder Componente" : "Mostrar Componente" }}</button>
+</mat-expansion-panel>
+
+<mat-divider></mat-divider>
+
+
+
+

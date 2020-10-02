@@ -25,8 +25,8 @@ export class EventBidingComponent implements OnInit {
 
 
   validaMsg(evento:KeyboardEvent){
-    console.log(evento);
-    console.log((<HTMLInputElement>evento.target).value);
+    //console.log(evento);
+    //console.log((<HTMLInputElement>evento.target).value);
     var descricaoDigitado = (<HTMLInputElement>evento.target).value;
     descricaoDigitado.length >= this.tamanhoMaximo ?  this.validaText = true : this.validaText = false; 
   }

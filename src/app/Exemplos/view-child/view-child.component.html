@@ -1,0 +1,29 @@
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+           Exemplo View Child
+        </mat-panel-title>
+     <mat-panel-description>
+     </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <br/>
+    <br/>
+    <h2> View Child </h2>
+
+    <mat-grid-list cols = 3>
+        <mat-grid-tile>
+            <button mat-raised-button color="primary" (click)="mostraConsoleDetalhesEL1()" #elemento1 > Elemento 1 </button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-form-field class="example-full-width">
+                <mat-label> Elemento 2 </mat-label>
+                <input matInput placeholder="Elemento 2" (click)="mostraConsoleDetalhesEL2()" #elemento2 >
+              </mat-form-field>
+        </mat-grid-tile>
+    </mat-grid-list>
+ 
+
+</mat-expansion-panel>
+
+<mat-divider></mat-divider>

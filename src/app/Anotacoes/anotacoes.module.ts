@@ -13,6 +13,8 @@ import { EventBidingComponent } from './event-biding/event-biding.component';
 import { DataBidingComponent } from './data-biding/data-biding.component';
 import { InputPropertiesComponent } from './input-properties/input-properties.component';
 import { OutputPropertiesComponent } from './output-properties/output-properties.component';
+import { LifeCicleComponentComponent } from './life-cicle-component/life-cicle-component.component';
+import { ViewChildComponent } from './view-child/view-child.component';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { OutputPropertiesComponent } from './output-properties/output-properties
     DataBidingComponent,
     InputPropertiesComponent,
     OutputPropertiesComponent,
-
+    LifeCicleComponentComponent,
+    ViewChildComponent
   ],
   exports:[
     InicialAngularComponent,
@@ -42,7 +45,9 @@ import { OutputPropertiesComponent } from './output-properties/output-properties
     EventBidingComponent,
     DataBidingComponent,
     InputPropertiesComponent,
-    OutputPropertiesComponent
+    OutputPropertiesComponent,
+    LifeCicleComponentComponent,
+    ViewChildComponent
   ],
   imports: [
     CommonModule,
