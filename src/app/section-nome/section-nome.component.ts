@@ -9,11 +9,11 @@ import { MenuPrincipalService } from '../menu-principal/menu-principal.service';
 })
 export class SectionNomeComponent  {
 
-nomePrincipal:String;
+urlIcon:String;
 
   constructor(dadosTela:MenuPrincipalService) {
       var dados  = dadosTela.getInformacaoUser();
-      this.nomePrincipal = dados.NomeUsuario;
+      this.urlIcon = dados.UrlFoto;
    }
 
   ngOnInit(): void {

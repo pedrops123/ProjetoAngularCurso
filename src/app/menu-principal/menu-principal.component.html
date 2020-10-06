@@ -1,9 +1,11 @@
 
 <mat-drawer-container autosize>
-    <mat-drawer id="menuLateral" mode="side" opened> 
+    <mat-drawer mode="side" opened> 
         <mat-card>
             <mat-card-header>
-                <div mat-card-avatar class="example-header-image"><img src=""/></div>
+                <div mat-card-avatar>
+                    <img id="img_ico" width="50px" [src]="infoUser.UrlFoto"/>
+                </div>
                 <mat-card-title> {{ infoUser.NomeUsuario }} </mat-card-title>
                     <mat-card-subtitle> {{ infoUser.Cargo }} </mat-card-subtitle>
             </mat-card-header>
@@ -16,12 +18,14 @@
     </mat-tree>
  -->
     <div  *ngFor="let item of this.infoUser.dadosArvore">
-        <h1>{{ item.node }}</h1> &nbsp; &nbsp;
+        <a class="titleMenu">{{ item.node }}</a> &nbsp; &nbsp;
         <mat-divider></mat-divider>
             <br/>
             <ul *ngFor="let node of item.childs">
                 <li>
-                    <a style="cursor: pointer;" id="buttonLink" (click)="scrollToElement(node.href)"> {{ node.Description }} </a>  
+                    <a class="items_menu" [id]="'buttonLink_'.toString() + node.href.toString()" (click)="scrollToElement(node.href)">
+                            {{ node.Description }}
+                     </a>  
                      <br/><br/>
                 </li>
             </ul>
@@ -29,12 +33,13 @@
 
     </mat-drawer>   
 
-    <mat-drawer-content>
+    <mat-drawer-content (scroll)="ValidaScroll($event)">
             <tagTeste></tagTeste>
             <Inicial-angular></Inicial-angular>
             <AnotacoesInfo></AnotacoesInfo>
             <AnotacoesModulos></AnotacoesModulos>
             <AnotacoesServices></AnotacoesServices>
+            <AngularCLI></AngularCLI>
             <AnotacoesTemplate></AnotacoesTemplate>
             <interpolacao></interpolacao>
             <Anotacoes-biding-interpolacao></Anotacoes-biding-interpolacao>
@@ -53,6 +58,11 @@
             <life-cicle-example></life-cicle-example>
             <AnnotationViewChild></AnnotationViewChild>
             <Example_child_component></Example_child_component>
+
+            <button *ngIf="buttonVisible" (click)="scrollToElement('img_icon')" id="f_button" mat-fab color="warn" aria-label="Example icon button with a home icon">
+                <mat-icon>home</mat-icon>
+            </button>
+
     </mat-drawer-content>
 
 </mat-drawer-container>

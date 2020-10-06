@@ -10,6 +10,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatTreeModule } from '@angular/material/tree';
 import { ExemplosModule } from '../Exemplos/exemplos.module';
 import { AnotacoesModule } from '../Anotacoes/anotacoes.module';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { AnotacoesModule } from '../Anotacoes/anotacoes.module';
     MatDividerModule,
     MatTreeModule,
     ExemplosModule,
-    AnotacoesModule
+    AnotacoesModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers:[
     MenuPrincipalService

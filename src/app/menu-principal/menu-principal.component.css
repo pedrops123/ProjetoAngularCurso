@@ -1,21 +1,88 @@
-.mat-drawer-container {
+.mat-drawer-container 
+{
     position: fixed;
     top:0;
     width: 100%;
     bottom: 0;
-  }
+}
 
-  ul {
+
+  #f_button 
+  {
+    position: fixed !important;
+    right: 2%;
+    top:90%;
+
+  }
+  
+  ul 
+  {
     list-style: outside none none;
   }
 
   
-  a {
+  a 
+  {
     color: white;
     text-decoration: none; /* no underline */
   }
 
 
-  .mat-drawer-content{
+  .mat-drawer-content
+  {
     text-align: center;
   }
+
+
+  .titleMenu 
+  {
+      font-size: 170%;
+      margin:0% 0% 0% 4%;
+  }
+
+  #img_ico 
+  {
+    margin:-5px 0px 0px -9px;
+  }
+
+
+/* Scrollbar side-menu container  */
+
+/* width */
+::-webkit-scrollbar 
+{
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track 
+{
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+  background: #555; 
+}
+
+
+.items_menu
+{
+  cursor: pointer;
+  font-size: 17px;
+  transition: transform .2s;
+}
+
+.items_menu:hover
+{
+  cursor: pointer;
+  color:red;
+  transform: scale(2.3);
+}

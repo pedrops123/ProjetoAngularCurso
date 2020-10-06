@@ -1,0 +1,16 @@
+#fundo_lateral_left 
+{
+    background-color: black;
+    width: 200px;
+    float:left;
+    height: 100px;
+}
+
+
+#fundo_lateral_right 
+{
+    background-color: black;
+    width: 200px;
+    float: right;
+    height: 100px;
+}

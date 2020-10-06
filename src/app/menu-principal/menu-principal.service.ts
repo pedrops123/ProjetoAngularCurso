@@ -1,6 +1,7 @@
 import { DadosMenu } from './../models/DadosMenu';
 import { Injectable } from '@angular/core';
 
+
 @Injectable()
 export class MenuPrincipalService  {
 
@@ -10,12 +11,12 @@ export class MenuPrincipalService  {
   constructor() { }
 
   getInformacaoUser(){
-  
+
     this.data = 
     {
-      NomeUsuario : "Pedro Furlan",
-      Cargo : "Desenvolvedor",
-      UrlFoto : "",
+      NomeUsuario : "Angular Guide",
+      Cargo : "Versão 1.0.0",
+      UrlFoto : "../../assets/images/angular_icon.png",
       dadosArvore:[
         {
           node:"Começando com Angular",
@@ -35,6 +36,15 @@ export class MenuPrincipalService  {
             {
               Description:'Services',
               href:'#services'
+            }
+          ]
+        },
+        {
+          node:'Angular CLI',
+          childs:[
+            {
+              Description:'Instalação CLI',
+              href:'#CLI'
             }
           ]
         },
@@ -72,6 +82,10 @@ export class MenuPrincipalService  {
             {
               Description:'Ciclo de Vida Componentes',
               href:'#CV'
+            },
+            {
+              Description:'View Child',
+              href:'#VC'
             }
           ]
         }

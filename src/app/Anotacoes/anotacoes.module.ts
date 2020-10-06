@@ -15,6 +15,9 @@ import { InputPropertiesComponent } from './input-properties/input-properties.co
 import { OutputPropertiesComponent } from './output-properties/output-properties.component';
 import { LifeCicleComponentComponent } from './life-cicle-component/life-cicle-component.component';
 import { ViewChildComponent } from './view-child/view-child.component';
+import { TemplateAnotacoesComponent } from '../template-anotacoes/template-anotacoes.component';
+import { FundoLateralComponent } from '../template-anotacoes/fundo-lateral/fundo-lateral.component';
+import { AngularCLIComponent } from './angular-cli/angular-cli.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { ViewChildComponent } from './view-child/view-child.component';
     InputPropertiesComponent,
     OutputPropertiesComponent,
     LifeCicleComponentComponent,
-    ViewChildComponent
+    ViewChildComponent,
+    TemplateAnotacoesComponent,
+    FundoLateralComponent,
+    AngularCLIComponent
   ],
   exports:[
     InicialAngularComponent,
@@ -47,7 +53,8 @@ import { ViewChildComponent } from './view-child/view-child.component';
     InputPropertiesComponent,
     OutputPropertiesComponent,
     LifeCicleComponentComponent,
-    ViewChildComponent
+    ViewChildComponent,
+    AngularCLIComponent
   ],
   imports: [
     CommonModule,

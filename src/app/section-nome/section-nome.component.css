@@ -1,5 +1,15 @@
-#titlePrincipal{
-   font-size: 40px;
-   margin-top: 60px;
-   margin-bottom: 60px;
+#fundo_title_principal {
+   background-color:lightslategray;
+   height: 200px;
 }
+
+#img_icon
+{
+   margin:36px 0px 0px 41px;
+   transition: transform .5s; 
+}
+
+#img_icon:hover {
+   transform: scale(1.1); 
+}
+

@@ -1,0 +1,62 @@
+
+.fundo_anotacao 
+{
+  z-index :1;
+  background-color:lightslategray;
+}
+
+#fundo_title
+{
+  background-color: black;
+  width: 600px;
+  height: 57px;
+  display: inline-block;
+  justify-content: center;
+  border-radius: 20px 20px 20px 20px;
+
+}
+
+.title_anotacao
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:gold;
+    font-size: 40px;
+    transition: transform .6s;
+    margin: 9px 0px 0px 0px;
+    cursor:default;
+}
+
+.title_anotacao:hover
+{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:yellow;
+  transform: scale(1.1);
+  font-size: 40px;
+  margin: 9px 0px 0px 0px;
+}
+
+.conteudo_anotacao
+{
+    font-family: cursive;
+    white-space: pre-wrap;
+}
+
+#pointer {
+  background-color: black;
+  width: 58px;
+  height: 31px;
+  border-radius: 68% 68% 68% 68%;
+  margin: 0% 0% 0% 49%;
+  border-bottom-left-radius:153px;
+  border-bottom-right-radius: 163px;
+}
+
+.fundo_content
+{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 5% 5% 5% 5%;
+  display: inline-block;
+  width: 880px;
+  min-width: 180px;
+  height: fit-content; 
+}
