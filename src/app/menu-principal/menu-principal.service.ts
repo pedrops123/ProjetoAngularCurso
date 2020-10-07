@@ -43,8 +43,8 @@ export class MenuPrincipalService  {
           node:'Angular CLI',
           childs:[
             {
-              Description:'Instalação CLI',
-              href:'#CLI'
+              Description:'Comandos Principais',
+              href:'#CCLI'
             }
           ]
         },

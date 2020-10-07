@@ -34,9 +34,10 @@
     </mat-drawer>   
 
     <mat-drawer-content (scroll)="ValidaScroll($event)">
-            <tagTeste></tagTeste>
-            <Inicial-angular></Inicial-angular>
-            <AnotacoesInfo></AnotacoesInfo>
+        <tagTeste></tagTeste>
+         <Inicial-angular></Inicial-angular>
+          <AnotacoesInfo></AnotacoesInfo>   
+          <estrutura-inicial></estrutura-inicial>
             <AnotacoesModulos></AnotacoesModulos>
             <AnotacoesServices></AnotacoesServices>
             <AngularCLI></AngularCLI>
@@ -59,8 +60,8 @@
             <AnnotationViewChild></AnnotationViewChild>
             <Example_child_component></Example_child_component>
 
-            <button *ngIf="buttonVisible" (click)="scrollToElement('img_icon')" id="f_button" mat-fab color="warn" aria-label="Example icon button with a home icon">
-                <mat-icon>home</mat-icon>
+            <button  matTooltip="Ir para o topo" *ngIf="buttonVisible" (click)="scrollToElement('img_icon')" id="f_button" mat-fab color="warn" >
+                <mat-icon>eject</mat-icon>
             </button>
 
     </mat-drawer-content>

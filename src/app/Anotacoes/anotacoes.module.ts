@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
+
 
 import { InicialAngularComponent } from './inicial-angular/inicial-angular.component';
 import { InfoUtilComponent } from './info-util/info-util.component';
@@ -18,6 +20,7 @@ import { ViewChildComponent } from './view-child/view-child.component';
 import { TemplateAnotacoesComponent } from '../template-anotacoes/template-anotacoes.component';
 import { FundoLateralComponent } from '../template-anotacoes/fundo-lateral/fundo-lateral.component';
 import { AngularCLIComponent } from './angular-cli/angular-cli.component';
+import { EstruturaInicialComponentComponent } from './estrutura-inicial-component/estrutura-inicial-component.component';
 
 
 @NgModule({
@@ -38,7 +41,8 @@ import { AngularCLIComponent } from './angular-cli/angular-cli.component';
     ViewChildComponent,
     TemplateAnotacoesComponent,
     FundoLateralComponent,
-    AngularCLIComponent
+    AngularCLIComponent,
+    EstruturaInicialComponentComponent
   ],
   exports:[
     InicialAngularComponent,
@@ -54,11 +58,13 @@ import { AngularCLIComponent } from './angular-cli/angular-cli.component';
     OutputPropertiesComponent,
     LifeCicleComponentComponent,
     ViewChildComponent,
-    AngularCLIComponent
+    AngularCLIComponent,
+    EstruturaInicialComponentComponent
   ],
   imports: [
     CommonModule,
-    MatDividerModule
+    MatDividerModule,
+    MatCardModule
   ]
 })
 export class AnotacoesModule { }

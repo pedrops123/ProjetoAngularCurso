@@ -17,13 +17,13 @@ export class LifeCicleComponentComponent {
         TitleSection:'Ciclo de Vida',
         DescriptionSection:`
         <ul> 
-          <li>NgOnChanges -> Quando o component é inicializado e quando o valor property-biding é atualizado .</li>
-          <li>ngOnInit -> Quando o component é inicializado . </li>
-          <li>ngDoCheck -> A cada ciclo de verificação de mudanças .</li>
-          <li>ngAfterContentInit -> Depois de inserir conteúdo externo na view .</li>
-          <li>ngAfterContentChecked -> A cada verificação de conteudo inserido. </li>
-          <li>ngAfterViewChecked -> a cada verificação de conteudo / Conteudo filho. </li>
-          <li>ngOnDestroy -> antes da diretiva/Component ser destruido. </li>
+          <li><b>NgOnChanges</b> &rarr; Quando o component é inicializado e quando o valor property-biding é atualizado .</li>
+          <li><b>ngOnInit</b>  &rarr; Quando o component é inicializado . </li>
+          <li><b>ngDoCheck</b>  &rarr; A cada ciclo de verificação de mudanças .</li>
+          <li><b>ngAfterContentInit</b>  &rarr; Depois de inserir conteúdo externo na view .</li>
+          <li><b>ngAfterContentChecked</b>  &rarr; A cada verificação de conteudo inserido. </li>
+          <li><b>ngAfterViewChecked</b>  &rarr; a cada verificação de conteudo / Conteudo filho. </li>
+          <li><b>ngOnDestroy</b>  &rarr; antes da diretiva/Component ser destruido. </li>
         </ul>        
         `
     }

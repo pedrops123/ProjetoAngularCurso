@@ -1,7 +1,9 @@
+html{
+  height: 100%;
+}
 
 .fundo_anotacao 
 {
-  z-index :1;
   background-color:lightslategray;
 }
 
@@ -18,12 +20,12 @@
 
 .title_anotacao
 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:gold;
-    font-size: 40px;
-    transition: transform .6s;
-    margin: 9px 0px 0px 0px;
-    cursor:default;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:gold;
+  font-size: 40px;
+  transition: transform .6s;
+  margin: 9px 0px 0px 0px;
+  cursor:default;
 }
 
 .title_anotacao:hover
@@ -37,8 +39,11 @@
 
 .conteudo_anotacao
 {
-    font-family: cursive;
-    white-space: pre-wrap;
+  font-family: cursive;
+  color:whitesmoke;
+  white-space: pre-wrap;
+  text-align: center;
+  list-style-position: inside;
 }
 
 #pointer {
@@ -53,10 +58,12 @@
 
 .fundo_content
 {
+  z-index: 0;
   background-color: rgba(0,0,0,0.5);
   border-radius: 5% 5% 5% 5%;
   display: inline-block;
   width: 880px;
   min-width: 180px;
   height: fit-content; 
+  position: relative;
 }

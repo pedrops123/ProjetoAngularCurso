@@ -1,12 +1,9 @@
-import { TileMenu } from './../models/TileMenu';
 import { MenuPrincipalService } from './menu-principal.service';
-import { DadosUser } from './../models/DadosUser';
 import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { DadosMenu } from '../models/DadosMenu';
-import { FlatTreeControl } from '@angular/cdk/tree';
 import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree';
 import * as $ from 'jquery';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+
 
 interface ExampleFlatNode {
   expandable: boolean;
@@ -63,54 +60,31 @@ export class MenuPrincipalComponent {
   }
 
 
-ValidaScroll($event){
+  ValidaScroll($event){
 
-  /* Valida Botão subir topo */
-    var scrollAtual = $event.target.scrollTop;
-    
-    if(scrollAtual > 700)
-    {
-      this.buttonVisible = true;
-    }
-    else
-    {
-      this.buttonVisible = false;
-    }
-
-    /* Valida cor links */
-
-    this.idArray.forEach(r =>{
-      var testId = Math.abs(document.getElementById(r.toString()).getBoundingClientRect().top);
-        if (scrollAtual >= testId){
-            //console.log(testId);
-            //console.log(scrollAtual);
-            console.log(r);
-        }
-
-      console.log(testId);
-    });
-
-
-}
-
-
-  /*
-   scrollListener($event) {
-    var title = document.getElementById("titlePrincipal");
-    var elmTop = title.getBoundingClientRect().top + window.scrollY;
-
-    this.idArray.forEach(r => {
-      var teste = document.getElementById(r.toString());
-      if (teste.offsetTop == elmTop){
-          console.log(r);
+    /* Valida Botão subir topo */
+      var scrollAtual = $event.target.scrollTop;
+      
+      if(scrollAtual > 700)
+      {
+        this.buttonVisible = true;
       }
-      //console.log(teste);
+      else
+      {
+        this.buttonVisible = false;
+      }
 
-    });
+      var filhosContent = $event.target.children;
+      
+      Array.prototype.forEach.call(filhosContent, child => {
 
-    }
-*/
+       // console.log('nome: ' + child.tagName + ' posição ' + child.offsetTop + ' posicao Atual ' + Math.abs(scrollAtual));
+      });
 
+      var visivel = $("#img_icon");
+      console.log(visivel);
+   
+  }
 
 
 }
