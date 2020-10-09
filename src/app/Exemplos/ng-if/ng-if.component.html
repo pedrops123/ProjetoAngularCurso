@@ -1,0 +1,43 @@
+<mat-expansion-panel>
+    
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+           Exemplo NG-if
+        </mat-panel-title>
+     <mat-panel-description>
+     </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <br/>
+    <br/>
+    <h2> Diretiva NG-IF </h2>
+<br/><br/>
+
+ <h1 *ngIf="valorCombo == 1">
+    escolheu 1
+ </h1>   
+
+ <h1 *ngIf="valorCombo == 2">
+    escolheu 2
+ </h1>   
+
+ 
+ <h1 *ngIf="valorCombo == 3">
+    escolheu 3
+ </h1>   
+
+
+<mat-form-field appearance="fill">
+    <mat-label>Opções ng-if</mat-label>
+    <mat-select matSelect #valorCbb [(ngModel)]="valorCombo">
+        <mat-option value="1"> valor 1 </mat-option>
+        <mat-option value="2"> valor 2 </mat-option>
+        <mat-option value="3"> valor 3 </mat-option>
+    </mat-select>
+</mat-form-field>
+
+</mat-expansion-panel>
+
+<mat-divider></mat-divider>
+
+

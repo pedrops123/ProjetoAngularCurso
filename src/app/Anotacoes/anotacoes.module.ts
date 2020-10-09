@@ -21,6 +21,10 @@ import { TemplateAnotacoesComponent } from '../template-anotacoes/template-anota
 import { FundoLateralComponent } from '../template-anotacoes/fundo-lateral/fundo-lateral.component';
 import { AngularCLIComponent } from './angular-cli/angular-cli.component';
 import { EstruturaInicialComponentComponent } from './estrutura-inicial-component/estrutura-inicial-component.component';
+import { CliTestesComponent } from './cli-testes/cli-testes.component';
+import { EstruturaInicialComponent } from './estrutura-inicial/estrutura-inicial.component';
+import { NgifComponent } from './ngif/ngif.component';
+import { NgCaseComponent } from './ng-case/ng-case.component';
 
 
 @NgModule({
@@ -42,7 +46,11 @@ import { EstruturaInicialComponentComponent } from './estrutura-inicial-componen
     TemplateAnotacoesComponent,
     FundoLateralComponent,
     AngularCLIComponent,
-    EstruturaInicialComponentComponent
+    EstruturaInicialComponentComponent,
+    CliTestesComponent,
+    EstruturaInicialComponent,
+    NgifComponent,
+    NgCaseComponent
   ],
   exports:[
     InicialAngularComponent,
@@ -59,7 +67,11 @@ import { EstruturaInicialComponentComponent } from './estrutura-inicial-componen
     LifeCicleComponentComponent,
     ViewChildComponent,
     AngularCLIComponent,
-    EstruturaInicialComponentComponent
+    EstruturaInicialComponentComponent,
+    CliTestesComponent,
+    EstruturaInicialComponent,
+    NgifComponent,
+    NgCaseComponent
   ],
   imports: [
     CommonModule,

@@ -22,6 +22,8 @@ import { DumbComponentComponent } from './input-properties/dumb-component/dumb-c
 import { LifeCicleComponentComponent } from './life-cicle-component/life-cicle-component.component';
 import { ComponentFileCicleComponent } from './life-cicle-component/component-file-cicle/component-file-cicle.component';
 import { ViewChildComponent } from './view-child/view-child.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
+import { NgCaseComponent } from './ng-case/ng-case.component';
 
 @NgModule({
   declarations:
@@ -36,7 +38,9 @@ import { ViewChildComponent } from './view-child/view-child.component';
     DumbComponentComponent,
     LifeCicleComponentComponent,
     ComponentFileCicleComponent,
-    ViewChildComponent
+    ViewChildComponent,
+    NgIfComponent,
+    NgCaseComponent
   ],
   exports:
   [
@@ -48,7 +52,9 @@ import { ViewChildComponent } from './view-child/view-child.component';
     InputPropertiesComponent,
     InterpolacoesComponent,
     LifeCicleComponentComponent,
-    ViewChildComponent
+    ViewChildComponent,
+    NgIfComponent,
+    NgCaseComponent
   ],
   imports: [
     CommonModule,

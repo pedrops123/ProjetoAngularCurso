@@ -1,0 +1,27 @@
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+           Exemplo NgCase
+        </mat-panel-title>
+     <mat-panel-description>
+     </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <br/>
+    <br/>
+    <h2> NgCase</h2>
+    
+    <div [ngSwitch]="buttonClicado">
+        <h1 *ngSwitchCase="'acao1'"> Acao 1 Clicado </h1>
+        <h1 *ngSwitchCase="'acao2'"> Acao 2 Clicado </h1>
+        <h1 *ngSwitchCase="'acao3'"> Acao 3 Clicado </h1>
+        <h1 *ngSwitchDefault> Default clicado </h1>
+    </div>
+
+    <mat-grid-list *ngFor="let button of listaButtons"  cols="10" rowHeight="10">
+        <mat-grid-tile colspan="10" rowspan="5" ><button (click)="buttonClicado = button.action" mat-stroked-button [color]="button.color ">{{ button.description }}</button></mat-grid-tile>
+    </mat-grid-list>
+    
+</mat-expansion-panel>
+
+<mat-divider></mat-divider>

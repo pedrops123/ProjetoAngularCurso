@@ -45,6 +45,14 @@ export class MenuPrincipalService  {
             {
               Description:'Comandos Principais',
               href:'#CCLI'
+            },
+            {
+              Description:'Comandos de teste',
+              href:'#Ctestes'
+            },
+            {
+                Description:'Estrutura inicial do Projeto',
+                href:'#structure_inicial'
             }
           ]
         },
@@ -88,11 +96,22 @@ export class MenuPrincipalService  {
               href:'#VC'
             }
           ]
+        },
+        {
+          node:'Diretivas',
+          childs:[
+            {
+              Description:'ng-if',
+              href:'#if'
+            },
+            {
+                Description:'ngSwitch, ngSwitchCase e ngSwitchDefault',
+                href:'#Case'
+            }
+          ]
         }
       ]
     }
-
-
 
     return this.data;
   }

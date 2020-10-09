@@ -18,7 +18,7 @@ export class InicialAngularComponent implements OnInit {
       
       <ul>
           <li>Instalar o NPM</li>
-          <a href='https://nodejs.org/en/'>https://nodejs.org/en/</a>
+          <a target='_blank' href='https://nodejs.org/en/'>https://nodejs.org/en/</a>
           <li>instalar o typescript -> npm install -g typescript</li>
           <li>Instalar o cli do angular -> npm install -g @angular/cli </li>
       </ul>`

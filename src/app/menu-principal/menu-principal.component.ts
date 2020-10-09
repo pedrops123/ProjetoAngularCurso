@@ -74,15 +74,7 @@ export class MenuPrincipalComponent {
         this.buttonVisible = false;
       }
 
-      var filhosContent = $event.target.children;
-      
-      Array.prototype.forEach.call(filhosContent, child => {
-
-       // console.log('nome: ' + child.tagName + ' posição ' + child.offsetTop + ' posicao Atual ' + Math.abs(scrollAtual));
-      });
-
-      var visivel = $("#img_icon");
-      console.log(visivel);
+      //console.log(visivel);
    
   }
 
