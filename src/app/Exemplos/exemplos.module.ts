@@ -24,6 +24,14 @@ import { ComponentFileCicleComponent } from './life-cicle-component/component-fi
 import { ViewChildComponent } from './view-child/view-child.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgCaseComponent } from './ng-case/ng-case.component';
+import { NgforComponent } from './ngfor/ngfor.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
+import { MatIconModule } from '@angular/material/icon';
+import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
+import { ChildsComponent } from './ng-content/childs/childs.component';
+import { DiretivaAtrComponent } from './diretiva-atr/diretiva-atr.component';
+import { ExampleDivDirective } from '../diretivas/example-div.directive';
 
 @NgModule({
   declarations:
@@ -40,7 +48,14 @@ import { NgCaseComponent } from './ng-case/ng-case.component';
     ComponentFileCicleComponent,
     ViewChildComponent,
     NgIfComponent,
-    NgCaseComponent
+    NgCaseComponent,
+    NgforComponent,
+    NgClassComponent,
+    NgStyleComponent,
+    NgContentComponent,
+    ChildsComponent,
+    DiretivaAtrComponent,
+    ExampleDivDirective
   ],
   exports:
   [
@@ -54,7 +69,12 @@ import { NgCaseComponent } from './ng-case/ng-case.component';
     LifeCicleComponentComponent,
     ViewChildComponent,
     NgIfComponent,
-    NgCaseComponent
+    NgCaseComponent,
+    NgforComponent,
+    NgClassComponent,
+    NgStyleComponent,
+    NgContentComponent,
+    DiretivaAtrComponent
   ],
   imports: [
     CommonModule,
@@ -65,7 +85,9 @@ import { NgCaseComponent } from './ng-case/ng-case.component';
     MatGridListModule,
     MatSelectModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    MatIconModule
+    
     
   ],
   providers:[

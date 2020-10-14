@@ -1,6 +1,6 @@
 import { DadosMenu } from './../models/DadosMenu';
 import { Injectable } from '@angular/core';
-
+import { environment }  from '../../environments/environment.prod';
 
 @Injectable()
 export class MenuPrincipalService  {
@@ -14,8 +14,8 @@ export class MenuPrincipalService  {
 
     this.data = 
     {
-      NomeUsuario : "Angular Guide",
-      Cargo : "Versão 1.0.0",
+      NomeSistema : environment.nomeSistema,
+      Versao : `Versão ${ environment.version }`,
       UrlFoto : "../../assets/images/angular_icon.png",
       dadosArvore:[
         {
@@ -105,8 +105,28 @@ export class MenuPrincipalService  {
               href:'#if'
             },
             {
-                Description:'ngSwitch, ngSwitchCase e ngSwitchDefault',
-                href:'#Case'
+              Description:'ngSwitch, ngSwitchCase e ngSwitchDefault',
+              href:'#Case'
+            },
+            {
+              Description:'Ng-for',
+              href:'#ngFor'
+            },
+            {
+              Description:'Ng-Class',
+              href:'#ngClass'
+            },
+            {
+              Description:'Ng-Style',
+              href:'#ngStyle'
+            },
+            {
+              Description:'Ng-Content',
+              href:'#ngContent'
+            },
+            {
+              Description:'Diretivas de Atributos',
+              href:'#Atributes'
             }
           ]
         }

@@ -25,6 +25,11 @@ import { CliTestesComponent } from './cli-testes/cli-testes.component';
 import { EstruturaInicialComponent } from './estrutura-inicial/estrutura-inicial.component';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgCaseComponent } from './ng-case/ng-case.component';
+import { NgforComponent } from './ngfor/ngfor.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
+import { DiretivaAtributoComponent } from './diretiva-atributo/diretiva-atributo.component';
 
 
 @NgModule({
@@ -50,7 +55,12 @@ import { NgCaseComponent } from './ng-case/ng-case.component';
     CliTestesComponent,
     EstruturaInicialComponent,
     NgifComponent,
-    NgCaseComponent
+    NgCaseComponent,
+    NgforComponent,
+    NgClassComponent,
+    NgStyleComponent,
+    NgContentComponent,
+    DiretivaAtributoComponent
   ],
   exports:[
     InicialAngularComponent,
@@ -71,7 +81,12 @@ import { NgCaseComponent } from './ng-case/ng-case.component';
     CliTestesComponent,
     EstruturaInicialComponent,
     NgifComponent,
-    NgCaseComponent
+    NgCaseComponent,
+    NgforComponent,
+    NgClassComponent,
+    NgStyleComponent,
+    NgContentComponent,
+    DiretivaAtributoComponent
   ],
   imports: [
     CommonModule,

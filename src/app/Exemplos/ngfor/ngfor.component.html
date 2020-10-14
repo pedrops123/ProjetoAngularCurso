@@ -1,0 +1,27 @@
+<mat-expansion-panel>
+    
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+           Exemplo {{ nomeDiretiva | titlecase }}
+        </mat-panel-title>
+     <mat-panel-description>
+     </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    
+    <br/>
+    <br/>
+    <h2> Diretiva  {{ nomeDiretiva | uppercase }}</h2>
+    <br/><br/>
+
+    
+    <ul *ngFor="let person of listaForExemplo">
+        <li> <b> Nome : </b> {{ person.nome + ' ' + person.sobrenome | titlecase }}  <b> Idade :</b> {{ person.idade | number }}  </li>
+    </ul>
+
+
+</mat-expansion-panel>
+
+<mat-divider></mat-divider>
+
+

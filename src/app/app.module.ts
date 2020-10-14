@@ -21,10 +21,12 @@ import { FundoLateralComponent } from './template-anotacoes/fundo-lateral/fundo-
 
 
 
+
 @NgModule({
   declarations: 
   [
     AppComponent
+    
    
   ],
   imports: 

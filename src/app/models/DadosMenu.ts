@@ -3,8 +3,8 @@ import { DadosUser } from './DadosUser';
 
 export class DadosMenu implements DadosUser
 {
-    NomeUsuario: String;
-    Cargo: String;
+    NomeSistema: String;
+    Versao: String;
     UrlFoto: String;
     dadosArvore:TileMenu[]
 }

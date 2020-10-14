@@ -1,0 +1,16 @@
+.inicial_div 
+{
+    width: 80px;
+    height:80px;
+    background-color: black;
+    cursor: pointer;
+    
+}
+
+.click_div {
+    width: 80px;
+    height:80px;
+    background-color: red;
+    cursor: pointer;
+}
+

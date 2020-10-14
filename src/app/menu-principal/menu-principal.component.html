@@ -6,8 +6,8 @@
                 <div mat-card-avatar>
                     <img id="img_ico" width="50px" [src]="infoUser.UrlFoto"/>
                 </div>
-                <mat-card-title> {{ infoUser.NomeUsuario }} </mat-card-title>
-                    <mat-card-subtitle> {{ infoUser.Cargo }} </mat-card-subtitle>
+                    <mat-card-title> {{ infoUser.NomeSistema }} </mat-card-title>
+                    <mat-card-subtitle> {{ infoUser.Versao }} </mat-card-subtitle>
             </mat-card-header>
         </mat-card>
     
@@ -34,10 +34,10 @@
     </mat-drawer>   
 
     <mat-drawer-content (scroll)="ValidaScroll($event)">
-        <tagTeste></tagTeste>
-         <Inicial-angular></Inicial-angular>
-          <AnotacoesInfo></AnotacoesInfo>   
-          <estrutura-inicial></estrutura-inicial>
+            <tagTeste></tagTeste>
+            <Inicial-angular></Inicial-angular>
+            <AnotacoesInfo></AnotacoesInfo>   
+            <estrutura-inicial></estrutura-inicial>
             <AnotacoesModulos></AnotacoesModulos>
             <AnotacoesServices></AnotacoesServices>
             <AngularCLI></AngularCLI>
@@ -65,8 +65,17 @@
             <ngIfExample></ngIfExample>
             <SwitchCaseAnotacoes></SwitchCaseAnotacoes>
             <ngcaseExample></ngcaseExample>
-
-            <button  matTooltip="Ir para o topo" *ngIf="buttonVisible" (click)="scrollToElement('img_icon')" id="f_button" mat-fab color="warn" >
+            <anotacoes-ngfor></anotacoes-ngfor>
+            <example_ngfor></example_ngfor>
+            <anotacao-ngClass></anotacao-ngClass>
+            <exemplo-ngClass></exemplo-ngClass>
+            <AnotacoesNGStyle></AnotacoesNGStyle>
+            <ExampleNgStyle></ExampleNgStyle>
+            <AnotacoesNgContent></AnotacoesNgContent>
+            <NgContentExample></NgContentExample>
+            <AnotationDiretivaAtr></AnotationDiretivaAtr>
+            <ExampleDirAtt></ExampleDirAtt>
+            <button matTooltip="Ir para o topo" *ngIf="buttonVisible" (click)="scrollToElement('img_icon')" id="f_button" mat-fab color="warn" >
                 <mat-icon>eject</mat-icon>
             </button>
 

@@ -1,7 +1,7 @@
 
 export interface DadosUser {
-    NomeUsuario : String;
-    Cargo:String ;
+    NomeSistema:String;
+    Versao:String ;
     UrlFoto:String;
 
 }
