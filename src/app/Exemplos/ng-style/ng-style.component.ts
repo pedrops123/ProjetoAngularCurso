@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DropCoresValue } from 'src/app/models/DropCoresValue';
+import { dropValoresPadroes } from '../../class/cores-padroes';
 
 class ComponentStyle{
   Color:string;
@@ -7,13 +9,6 @@ class ComponentStyle{
   font_color:string;
   font_size:number;
 }
-
-class DropCoresValue {
-  description:string;
-  value:string; 
-}
-
-
 
 @Component({
   selector: 'ExampleNgStyle',
@@ -40,28 +35,7 @@ export class NgStyleComponent implements OnInit {
         font_size:10
       }
 
-      this.DadosDropListCores = [
-        {
-          description:'Branco',
-          value:'white'
-        },
-        {
-          description:'Preto',
-          value:'black'
-        },
-        {
-          description:'Rosa',
-          value:'pink'
-        },
-        {
-          description:'Amarelo',
-          value:'yellow'
-        },
-        {
-          description:'Verde',
-          value:'green'
-        }
-      ]
+      this.DadosDropListCores = dropValoresPadroes;
    }
 
   ngOnInit(): void {

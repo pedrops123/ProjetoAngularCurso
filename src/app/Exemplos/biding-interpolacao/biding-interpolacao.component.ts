@@ -10,7 +10,7 @@ export class BidingInterpolacaoComponent implements OnInit {
   urlImg:String;
 
   constructor() { 
-    this.urlImg = "http://lorempixel.com/400/200/sports/2/";
+    this.urlImg = "https://picsum.photos/200/300";
   }
 
   ngOnInit(): void {

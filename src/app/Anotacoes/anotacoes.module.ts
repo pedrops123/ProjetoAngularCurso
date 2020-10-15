@@ -30,6 +30,8 @@ import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { DiretivaAtributoComponent } from './diretiva-atributo/diretiva-atributo.component';
+import { BidingListenerDirectiveComponent } from './biding-listener-directive/biding-listener-directive.component';
+import { InputPropertyDirectiveComponent } from './input-property-directive/input-property-directive.component';
 
 
 @NgModule({
@@ -60,7 +62,9 @@ import { DiretivaAtributoComponent } from './diretiva-atributo/diretiva-atributo
     NgClassComponent,
     NgStyleComponent,
     NgContentComponent,
-    DiretivaAtributoComponent
+    DiretivaAtributoComponent,
+    BidingListenerDirectiveComponent,
+    InputPropertyDirectiveComponent
   ],
   exports:[
     InicialAngularComponent,
@@ -86,7 +90,9 @@ import { DiretivaAtributoComponent } from './diretiva-atributo/diretiva-atributo
     NgClassComponent,
     NgStyleComponent,
     NgContentComponent,
-    DiretivaAtributoComponent
+    DiretivaAtributoComponent,
+    BidingListenerDirectiveComponent,
+    InputPropertyDirectiveComponent
   ],
   imports: [
     CommonModule,

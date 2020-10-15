@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'input-properties-annotation',
-  template: '<TemplateAnotacoes [InfoSection]="dadosTela" ></TemplateAnotacoes>',
+  template: '<TemplateAnotacoes [InfoSection]="dadosTela" ></TemplateAnotacoes>'
   
 })
 export class InputPropertiesComponent implements OnInit {

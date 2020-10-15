@@ -32,6 +32,10 @@ import { NgContentComponent } from './ng-content/ng-content.component';
 import { ChildsComponent } from './ng-content/childs/childs.component';
 import { DiretivaAtrComponent } from './diretiva-atr/diretiva-atr.component';
 import { ExampleDivDirective } from '../diretivas/example-div.directive';
+import { BidingListenerDirectiveComponent } from './biding-listener-directive/biding-listener-directive.component';
+import { DirectiveBidingListenerDirective } from '../diretivas/directive-biding-listener.directive';
+import { InputPropertyCustomDirectiveComponent } from './input-property-custom-directive/input-property-custom-directive.component';
+import { DirectiveCustomDirective } from '../diretivas/directive-custom.directive';
 
 @NgModule({
   declarations:
@@ -55,7 +59,11 @@ import { ExampleDivDirective } from '../diretivas/example-div.directive';
     NgContentComponent,
     ChildsComponent,
     DiretivaAtrComponent,
-    ExampleDivDirective
+    ExampleDivDirective,
+    DirectiveCustomDirective,
+    BidingListenerDirectiveComponent,
+    DirectiveBidingListenerDirective,
+    InputPropertyCustomDirectiveComponent
   ],
   exports:
   [
@@ -74,7 +82,9 @@ import { ExampleDivDirective } from '../diretivas/example-div.directive';
     NgClassComponent,
     NgStyleComponent,
     NgContentComponent,
-    DiretivaAtrComponent
+    BidingListenerDirectiveComponent,
+    DiretivaAtrComponent,
+    InputPropertyCustomDirectiveComponent
   ],
   imports: [
     CommonModule,

@@ -49,6 +49,7 @@ export class MenuPrincipalComponent {
   }
   
   scrollToElement($element): void {
+    
    var elementoDOM = document.getElementById($element);
    elementoDOM.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
    

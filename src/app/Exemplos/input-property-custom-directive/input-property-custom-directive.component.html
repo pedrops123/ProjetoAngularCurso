@@ -1,0 +1,52 @@
+<mat-expansion-panel>
+    
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+           Exemplo {{ nomeDiretiva | titlecase }}
+        </mat-panel-title>
+     <mat-panel-description>
+     </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    
+    <br/>
+    <br/>
+    <h2> {{ nomeDiretiva | uppercase }}</h2>
+    <br/><br/>
+    <mat-grid-list cols="10">
+        <mat-grid-tile colspan="10">
+            <div DirectiveCustom [ngStyle]="{'background-color': defaultColor }" [defaultColor]="defaultColor" [HighLightColor]="highlightColor">texto</div>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-grid-list cols="10">
+        <mat-grid-tile colspan="5">
+     
+            <mat-form-field appearance="fill">
+                <mat-label>Default Color: </mat-label>
+                <mat-select matSelect  id="selectCoresDefault" [(ngModel)]="defaultColor">
+                    <mat-option [ngStyle]="{ 'background-color':cores.value }" *ngFor="let cores of coresDrop"  [value]="cores.value"> {{ cores.description }} </mat-option>
+                </mat-select>
+            </mat-form-field>    
+
+
+
+        </mat-grid-tile>
+        <mat-grid-tile colspan="5">
+       
+            <mat-form-field appearance="fill">
+                <mat-label>highlight Color: </mat-label>
+                <mat-select matSelect  id="selectCoresHigh" [(ngModel)]="highlightColor">
+                    <mat-option [ngStyle]="{ 'background-color':cores.value }" *ngFor="let cores of coresDrop"  [value]="cores.value"> {{ cores.description }} </mat-option>
+                </mat-select>
+            </mat-form-field>    
+
+        </mat-grid-tile>
+    </mat-grid-list>
+    
+
+</mat-expansion-panel>
+
+<mat-divider></mat-divider>
+
+

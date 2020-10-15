@@ -15,9 +15,6 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule }   from '@angular/forms';
 import { MenuPrincipalModule } from './menu-principal/menu-principal.module';
-import { FundoLateralComponent } from './template-anotacoes/fundo-lateral/fundo-lateral.component';
-
-
 
 
 
@@ -26,7 +23,6 @@ import { FundoLateralComponent } from './template-anotacoes/fundo-lateral/fundo-
   declarations: 
   [
     AppComponent
-    
    
   ],
   imports: 

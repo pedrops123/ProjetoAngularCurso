@@ -18,8 +18,8 @@
         <h1 *ngSwitchDefault> Default clicado </h1>
     </div>
 
-    <mat-grid-list *ngFor="let button of listaButtons"  cols="10" rowHeight="10">
-        <mat-grid-tile colspan="10" rowspan="5" ><button (click)="buttonClicado = button.action" mat-stroked-button [color]="button.color ">{{ button.description }}</button></mat-grid-tile>
+    <mat-grid-list cols="10">
+        <mat-grid-tile *ngFor="let button of listaButtons" colspan="2" ><button (click)="buttonClicado = button.action" mat-stroked-button [color]="button.color ">{{ button.description }}</button></mat-grid-tile>
     </mat-grid-list>
     
 </mat-expansion-panel>

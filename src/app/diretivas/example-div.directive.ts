@@ -1,9 +1,9 @@
-import { Directive, ElementRef, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
 
 @Directive({
   selector: '[ExampleDiv]'
 })
-export class ExampleDivDirective {
+export class ExampleDivDirective implements AfterViewInit  {
 
   constructor(private Elemento:ElementRef , private renderer:Renderer2) { 
 
@@ -15,12 +15,23 @@ export class ExampleDivDirective {
     */
 
     /* Forma Correta */
+
       this.renderer.setStyle(this.Elemento.nativeElement , 'background-color','black');
       this.renderer.setStyle(this.Elemento.nativeElement , 'width' , '90px');
       this.renderer.setStyle(this.Elemento.nativeElement , 'height' , '90px');
-      
+      this.renderer.setStyle(this.Elemento.nativeElement , 'color' , 'deepskyblue');
+    
       console.log(this.Elemento);
-
   }
+
+
+  ngAfterViewInit(){
+    console.log("Faz mudanca apos renderizar");
+    let tagP = this.Elemento.nativeElement.querySelector("p");
+    this.renderer.setStyle(tagP,'margin-top','30%');
+    //console.log(tagP);
+  }
+
+
 
 }
